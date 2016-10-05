@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  background: skyblue;
+  font-family: 'Lato', sans-serif;
+  color: #0B809D;
+}
+
+.nota {
+
+  overflow: hidden;
+  position: fixed;
+
+  top: 20px;
+  left: 350px;
+  width: 50vw;
+  height: 50vh;
+  border: 3px solid transparent;
+  transition: .9s;
+
+}
+
+.img {
+  position: absolute;
+  transition: .9s;
+  left: 0;
+  bottom: 0;
+
+}
+
+.nota p {
+  width: 200px;
+  padding: 20px;
+  font-size: 20px;
+  position: absolute;
+  left: 170px;
+  top: 50px;
+  border-radius: 5px;
+  color: transparent;
+  background: transparent;
+
+}
+
+.loren {
+  transform: rotate(45deg) scale(.2);
+  transition: .9s;
+}
+
+.nota:hover {
+  border: solid #FF0000 3px;
+
+}
+
+.nota:hover .img {
+  transform: scale(1.5);
+}
+.nota:hover .loren {
+  transform: rotate(0) scale(1);
+  background: rgba(252, 232, 175, 0.5);
+  color: #053408;
+}
+
+.footer {
+  position: fixed;
+  top: 600px;
+  left: 700px;
+
+}
+
+.footer p {
+    transition: .9s;
+}
+
+.footer:hover p {
+  color: transparent;
+}
